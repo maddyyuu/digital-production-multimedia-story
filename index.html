@@ -1,0 +1,109 @@
+<head>
+
+<!-- links to my external stylesheet to stylize page (ie. font + mobile layout) -->
+    <link href="style.css" 
+    type="text/css" 
+    rel="stylesheet" />
+
+<!-- links external KnightLab SoundCite interactive tool to my HTML
+ including CSS (styles inline audio player) + JavaScript (ensures audio playback when text is clicked by user)-->
+
+<link href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css'
+ rel="stylesheet" type='text/css'>
+ <script 
+ type='text/javascript' 
+ src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'>
+ </script>
+
+<!-- links external KnightLab StoryMap interactive tool to my HTML
+including CSS (styles map elements) + JavaScript (handles interactivity + slide functionality)-->
+<link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
+<script type="text/javascript" src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js">
+</script>
+
+</head>
+
+<!-- all visible page content included within <body>; 
+ div ID uniquely identifies distinct page elements for specific styling purposes -->
+
+<body>
+
+    <h1>Bad Bunny Wins Album of the Year, Makes Grammy’s History with First Spanish-Language Album</h1> <!-- main headline -->
+    
+    <div id="byline">
+    <p>By Madelyn Yu | February 6, 2026 </div></a></p>
+
+    <img src="badbunny.png" width="100%"/> <!-- displays image file, scales it to fill full width-->
+  
+    <div id ="phototext">
+        <i>Photo by Kevin Winter/Getty Images for The Recording Academy</i>
+
+</div> 
+    <p id="story">Closing out the 68th Annual Grammy Awards, Bad Bunny claimed Album of the Year for Debí Tirar Más Fotos, 
+        making history as the first entirely Spanish-language record to receive the Recording Academy’s 
+        top honor.</p>
+
+    <p id="story">
+        Accepting the award primarily in Spanish, the Puerto Rican artist used the moment to honor his roots and his community, 
+        dedicating the win to “all the people who had to leave their home, their land, their country, to follow their dreams.”</p>
+        
+    <p id="story">
+        The moment marked a career-defining milestone for the Puerto Rican superstar and emphasized a broader shift in Latin music’s 
+        presence within the global mainstream, just one week before his highly anticipated Super Bowl Halftime Show performance.</p>
+
+
+    <h2>A Love Letter to Puerto Rico</h2> <!-- subheading for SoundCite + Spotify Player section -->
+
+    <!-- spotify player HTML code, specifies URL to embed and adjusts display format -->
+    <iframe
+    data-testid="embed-iframe" 
+    style="border-radius:12px" 
+    src="https://open.spotify.com/embed/album/5K79FLRUCSysQnVESLcTdb?utm_source=generator" 
+    width="100%" height="352" 
+    frameBorder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy"></iframe>
+
+    <!-- section below incorporates KnightLab SoundCite embed code:
+     enables JS to turn specific text section into playable audio clip (all elements with soundcite class)
+     specifies specific mp3 file to play and # of plays-->
+
+    <p id="story">
+        Translated as “I should have taken more photos,” Debí Tirar Más Fotos is Bad Bunny’s sixth solo album and a heartfelt love letter 
+        to Puerto Rico. Both deeply personal and resonant, the album invites listeners to reconnect with their roots in a way that 
+        transcends language barriers, weaving
+        <span class="soundcite" 
+        data-url="badbunny.mp3" 
+        data-plays="1">traditional Puerto Rican music</span> including bomba, salsa, and plena 
+        with modern reggaeton, denbow, pop, and more.</p>
+    
+    <p id="story">
+        Released on January 5, 2025, the album gained global momentum, propelled by singles like the title track “DtMf,” 
+        which dominated Billboard’s global charts. Beyond its commercial success, Debí Tirar Más Fotos weaves in poignant social commentary, 
+        touching on themes of loss, gentrification, immigration, and cultural heritage. For instance, the opening track, “NUEVAYoL,” 
+        reflects on Puerto Rican life in New York City and the broader diaspora, while the album comes full circle with “La MuDANZA,”
+        whose
+        <span class="soundcite" 
+        data-url="lamudanza.mp3" 
+        data-plays="1">closing lyrics</span>
+        serve as a powerful testament to Bad Bunny’s firm commitment to his homeland.</p>
+
+    <h2>A Look into the 2026 Album of the Year Contenders</h2> <!-- subheading for StoryMap section-->
+    
+    <p id="story">
+        Album of the Year stands as the most prestigious honor at the Grammy Awards, celebrating not only the artist but the collective creative 
+        forces behind a record for outstanding overall achievement.</p>
+
+    <p id="story">
+        <i>Explore the 2026 Album of the Year nominees below through an interactive map rooted in each artist’s hometown, 
+            giving context to the diverse voices that defined the year in music.</i>
+
+
+<!-- section below incorporates KnightLab StoryMap embed code: 
+ map and slides hosted externally via URL, <iframe> element embeds it to webpage with src attribute specifying source -->
+<iframe
+src="https://uploads.knightlab.com/storymapjs/e27f56de61d95b7622216a7ffdcf7bd4/2026-grammy-album-of-the-year-nominees/index.html" 
+frameborder="0" width="100%" height="500"></iframe>
+
+
+</body>

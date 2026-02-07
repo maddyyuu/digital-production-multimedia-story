@@ -1,0 +1,32 @@
+
+body {
+    width:50%; /*limits page content to half of screen width for better reading experience*/
+    margin:auto; /* centers page horizontally on screen */
+    font-size:1.5em;
+}
+
+/*section styles specific page elements defined by div IDs in HTML, controls font and size */ 
+
+h1 {
+    font-size: 2em;
+}
+
+#byline {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.8em;
+}
+
+#phototext{
+    font-size: 0.6em;
+}
+
+/* MOBILE RULES - optimizes story for mobile by increasing text size, 
+ensures page spans full screen width   */
+
+@media (orientation: portrait) {
+  
+    body {
+        font-size:2em;
+        width:100%
+    }
+}
