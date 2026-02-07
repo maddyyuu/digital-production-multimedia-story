@@ -20,13 +20,12 @@ h1 {
     font-size: 0.6em;
 }
 
-/* MOBILE RULES - optimizes story for mobile by increasing text size, 
-ensures page spans full screen width   */
+/* MOBILE RULES - optimizes story for mobile */
 
 @media (orientation: portrait) {
   
     body {
         font-size:2em;
-        width:100%
+
     }
 }
